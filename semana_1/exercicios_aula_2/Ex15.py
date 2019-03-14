@@ -6,13 +6,14 @@ reaplica(soma_2, 2) -> 6
 reaplica(sub_2, 2) -> -2
 '''
 
-def soma_2(n):
-    return n + 2
+def soma_2(x):
+    return x + 2
 
-def sub(x, y):
-    return x - y
+def sub_2(x):
+    return x - 2
 
-def aplicacao(op, val):
-    return op(op(val))
+def aplicacao(val, x):
+    return val(val(x))
 
-
+print(aplicacao(soma_2, 2))
+print(aplicacao(sub_2,2))
