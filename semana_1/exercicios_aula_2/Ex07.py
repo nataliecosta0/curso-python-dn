@@ -10,7 +10,6 @@ list.insert, list.append, list.remove
 '''
 
 listaEntrada = [1, 2, 3]
-
 for entrada in listaEntrada:
     listaEntrada.remove(entrada)
     listaEntrada.insert(0, entrada)

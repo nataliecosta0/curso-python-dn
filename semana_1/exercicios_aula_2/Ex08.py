@@ -11,6 +11,7 @@ list.insert, list.append, list.remove
 listaEntrada = [1, 2, 3]
 listaSaida = []
 
-listaSaida = list(reversed(listaEntrada))
+for entrada in listaEntrada:
+    listaSaida.insert(0, entrada)
 
 print(listaSaida)
