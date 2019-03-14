@@ -1,6 +1,9 @@
+''''
+Problema #11
+Faça uma função que não tenho a cláusula de retorno e mostre seu tipo
+'''
+
 def funcao():
-    pass
+    ...
 
-resul = type.funcao
-
-print(resul)
+print(funcao())
