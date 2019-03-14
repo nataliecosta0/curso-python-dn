@@ -6,14 +6,12 @@ Usando a função reduce faça a somatória de todos os elementos da lista junto
 EX:
 [‘a’, ‘abc’, ‘def’] -> 7
 '''
-from functools import reduce 
+from functools import reduce
 
 lista = ['keep', 'remove', 'keep', 'remove', 'keep']
-resultado = reduce(len((lambda x, y: x + y, [lista])))
+resultadoSoma = reduce(lambda x, y: x + y, ['keep', 'remove', 'keep', 'remove', 'keep'])
 
-print(resultado)
-
-#corrigir
+print(len(resultadoSoma))
 
 
 
