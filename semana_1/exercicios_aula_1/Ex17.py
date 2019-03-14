@@ -19,3 +19,5 @@ def ordem(lista):
         return (listaOrdem [anterior] + listaOrdem[posterior]) / 2 
 
 print(f'Mediana: {ordem(lista)}')
+
+#corrigir
