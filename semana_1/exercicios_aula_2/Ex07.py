@@ -10,9 +10,9 @@ list.insert, list.append, list.remove
 '''
 
 listaEntrada = [1, 2, 3]
-listaSaida = []
 
-for i in listaEntrada:
-    listaSaida.insert(0, i)
+for entrada in listaEntrada:
+    listaEntrada.remove(entrada)
+    listaEntrada.insert(0, entrada)
 
-print(listaSaida)
+print(listaEntrada)
