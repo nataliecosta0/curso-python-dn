@@ -14,3 +14,5 @@ for inicio, numero in enumerate(listaEntrada):
     listaSaida.append(sum(listaEntrada[:inicio+1]))
 
 print(listaSaida)
+
+#
