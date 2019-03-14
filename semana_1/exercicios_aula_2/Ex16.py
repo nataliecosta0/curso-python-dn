@@ -7,9 +7,8 @@ aplica_em_lote(soma_1, 3) -> [1, 2, 3]
 DICA:
 O index inicia em 0
 '''
-
-"def soma_1(numeros):
-
+def soma_1(numeros):
+    return numeros +1
 
 def aplicacao_em_lote(val, numeros):
     lista = []
@@ -17,7 +16,4 @@ def aplicacao_em_lote(val, numeros):
         lista.append(val(elemento))
     return lista
 
-#print(aplicacao_em_lote(soma_1, 3))
-
-print(aplicacao_em_lote(val, 3))
-
+print(aplicacao_em_lote(soma_1, 9))
