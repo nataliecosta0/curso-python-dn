@@ -6,7 +6,7 @@ f(x, y, z) -> exp(exp(x, y, z), y, z)
 Agora tente efetuar os testes dessa função
 '''
 
-from unittest import TestCase, main 
+from unittest import TestCase
 
 def soma(x, y):
     return x + y
@@ -14,14 +14,18 @@ def soma(x, y):
 def sub(x, y):
     return x - y
 
-def exp(x, y, x):
+def exp(x, y, z):
     return sub(soma(x, y), z)
 
-def exp(x, y, z):
+def funcaoNova(x, y, z):
     return exp(exp(x, y, z), y, z)
 
 class TesteExpre(TestCase):
-    def teste(self):
-        self.assertEqual(exp(exp(0, 0, 0), 0, 0))
 
-        
+    def teste_1(self):
+       self.assertEqual(funcaoNova(2, 2, 4), -2)
+
+    def teste_2(self):
+        self.assertEqual(funcaoNova(5, 5, 10), -5)
+
+    
