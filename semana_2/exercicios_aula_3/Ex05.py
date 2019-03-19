@@ -3,7 +3,7 @@ Problema #5
 Data a classe da calculadora. Defina difentes SUTs e os teste individualmente.
 '''
 
-from unittest import TestCase
+from unittest import TestCase, main 
 
 class Calc:
     def add(self, x, y):
@@ -11,37 +11,34 @@ class Calc:
 
     def sub(self, x, y):
         return x + y
-    
-    def mult(self, x, y):
+
+    def multi(self, x, y):
         return x + y
 
     def div(self, x, y):
         return x + y
 
-class ClasseTesteSoma(TestCase):
-    def resultado_soma(self):
+class TestSoma(TestCase):
+    def teste_soma(self):
         c = Calc()
-        entrada =  c.add(1, 1)
-        resultado_esperado = 2
-        self.assertEqual(entrada, resultado_esperado)
+        self.assertEqual(c.add(1, 2), 3, 'Errado')
+        self.assertEqual(c.add(2, 2), 4, 'Errado')
 
-class ClasseTesteSub(TestCase):
-    def resultado_sub(self):
+    def teste_subtra(self):
         c = Calc()
-        entrada = c.sub(1, 1)
-        resultado_esperado = 0
-        self.assertEqual(entrada, resultado_esperado)
+        self.assertEqual(c.sub(1, 1), 0, 'Errado')
+        self.assertEqual(c.sub(4, 2), 2, 'Errado')
 
-class ClasseTesteMult(TestCase):
-    def resultado_mult(self):
+    def teste_multi(self):
         c = Calc()
-        entrada = c.mult(2, 2)
-        resultado_esperado = 4
-        self.assertEqual(entrada, resultado_esperado)
+        self.assertEqual(c.multi(2, 2), 4, 'Errado')
+        self.assertEqual(c.multi(6, 6), 36, 'Errado')
+        self.assertEqual(c.multi(6, 2), 12, 'Errrado')
 
-class ClasseTesteDiv(TestCase):
-    def resultado_div(self):
+    def teste_div(self):
         c = Calc()
-        entrada = c.div(6, 2)
-        resultado_esperado = 3
-        self.assertEqual(entrada, resultado_esperado)
+        self.assertEqual(c.div(10, 2), 5, 'Errado')
+        self.assertEqual(c.div(8, 2), 4, 'Errado')
+
+
+    
