@@ -23,3 +23,5 @@ def exp(x, y, z):
 class TesteExpre(TestCase):
     def teste(self):
         self.assertEqual(exp(exp(0, 0, 0), 0, 0))
+
+        
