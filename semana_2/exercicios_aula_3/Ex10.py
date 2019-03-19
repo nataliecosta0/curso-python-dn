@@ -12,9 +12,15 @@ def sub(x, y):
     return x - y
 
 def exp(x, y, z):
-    return soma(sub(x,y),z)
+    return sub(soma(x,y),z)
 
 class TesteExpre(TestCase):
-    dummy = 0
+    dummy = 3
     def teste_sub(self):
-        self.assertEqual(exp(self.dummy, self.dummy, 4), 4)
+        self.assertEqual(exp(2, 5, self.dummy), 4)
+
+    def teste_sub2(self):
+        self.assertEqual(exp(2, 1, self.dummy), 0)
+
+    def teste_sub3(self):
+        self.assertEqual(exp(8, 2, self.dummy), 7)
