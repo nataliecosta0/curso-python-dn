@@ -19,3 +19,6 @@ class Teste_lista(TestCase):
 
     def teste_retorna_python_love(self):
         self.assertEqual(funcao_retorna('Python love'), ['Python', 'love'])
+
+    def teste_retorna_python_e_foda(self):
+        self.assertEqual(funcao_retorna('Python é foda'), ['Python', 'é', 'foda'])
