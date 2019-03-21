@@ -8,10 +8,9 @@ string
 from unittest import TestCase
 from collections import Counter
 
-def contador_letras(letras):
-    if type(letras) == type(str):
-        return conter(letras)
+def contar_letras(texto):
+    return Counter(texto)
 
-class Teste_letras(TestCase):
-    def teste_contar_letras_iguais(self):
-        self.assertEqual('123mudar')
+class TestContar(TestCase):
+    def test_contar_letras(self):
+        self.assertEqual(contar_letras('Oi'), {'O': 1, 'i': 1})
