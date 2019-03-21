@@ -28,4 +28,10 @@ class TesteExpre(TestCase):
     def teste_2(self):
         self.assertEqual(funcaoNova(5, 5, 10), -5)
 
+    def teste_3(self):
+        self.assertEqual(funcaoNova(3, 4, 5), 1)
+
+    def teste_4(self):
+        self.assertEqual(funcaoNova(5, 8, 6), 9)
+
     
