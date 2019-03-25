@@ -8,12 +8,19 @@ função = f(x) = x * 2
 saida = [‘foofoo’, ‘barbar’, ‘spamspam’, ‘eggseggs’]
 '''
 
+from unittest import TestCase
+
 listaEntrada = ['foo', 'bar', 'spam', 'eggs']
 listaSaida = []
 
 def multi(listaEntrada):
     for x in listaEntrada:
-        listaSaida.append(x * 2)
+        listaSaida.append(x*2)
     return listaSaida
 
 print(multi(listaEntrada))
+
+class Teste(TestCase):
+    def teste_multiplica(self):
+        self.assertEqual(multi([listaEntrada]), ['foofoo', 'barbar', 'spamspam', 'eggseggs'])
+
