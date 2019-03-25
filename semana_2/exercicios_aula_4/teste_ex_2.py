@@ -3,9 +3,10 @@ Problema #2
 Me guiem usando TDD para desenvolvermos esse cenário
 '''
 
+#exercicio p/ dar erro no teste
+
 from unittest import TestCase
 
-'''
 def sub(x, y):
     try:
         return x - y
@@ -17,7 +18,6 @@ def soma(x, y):
         return x + y
     except TypeError:
         return 'Não é um número'
-'''
 
 def exp(x, y, z):
     return sub(soma(x, y), z)

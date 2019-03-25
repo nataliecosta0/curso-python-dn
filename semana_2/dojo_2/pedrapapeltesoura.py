@@ -11,8 +11,32 @@ As regras são as seguintes:
 '''
 
 from unittest import TestCase
+from typing import Text
 
 def jogadas(escolher_jogada1, escolher_jogada2):
+
+    """
+    Jogo do jokenpo
+
+    Regras de entrada: Cada jogador escolhe um elemento valido (pedra, tesoura, papel). O resultado será
+    avaliado com base em regras pré-definidas:
+        - Pedra ganha de tesoura;
+        - Tesoura ganha de Papel;
+        - Papel ganha de pedra;
+        - Entradas iguais empata.
+    Caso o elemento não esteja dentro da lista, retorna invalido.
+
+    >>> jogo_jokenpo('tesoura', 'tesoura')
+    'Empate'
+
+    >>> jogo_jokenpo('vassoura', 'papel')
+    'Argumento inválido'
+
+    >>> jogo_jokenpo('pedra', 'tesoura')
+    'Pedra Ganhou'
+
+    """
+
     dicionario = {'pedra': 'papel', 'papel': 'tesoura', 'tesoura':'pedra'}
 
     if escolher_jogada1 == escolher_jogada2:
