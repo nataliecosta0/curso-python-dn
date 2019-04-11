@@ -10,3 +10,23 @@ f(15) -> ‘romeu e julieta’
 f(19) -> 19
 '''
 
+numero = int(input("Informe um número: "))
+
+def resulQueijo(numero):
+    if numero % 3 == 0:
+        return 'queijo'
+    else:
+        return numero
+
+def resulGoiabada(numero):
+    if numero % 5 == 0:
+        return 'goiabada'
+    else:
+        return numero
+
+def resulRomeuJulieta(numero):
+    if numero % 3 == 0 and numero % 5 == 0:
+        return 'romeu e julieta'
+    else:
+        return numero
+
