@@ -49,4 +49,3 @@ b1.saude_atual()
 b1.idade_atual()
 b1.mostrar()
 b1.humor()
-    
