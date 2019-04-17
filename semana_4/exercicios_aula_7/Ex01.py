@@ -6,13 +6,21 @@ responda se é possível criar um teste para ela.
 
 from unittest import TestCase
 
-val = 1
+x = 1
 
-def soma(x):
-    return x + val
+def funcaoVaria(x):
+    return x + 2
 
-val = 2
+print(funcaoVaria(2))
 
-class Test_funcao(TestCase):
-    def test_deve_retornar_3(self):
-        self.assertAlmostEqual(soma(2), 3)
+x = 2
+
+print(funcaoVaria(x))
+
+class TesteFuncaoVaria(TestCase):
+    def teste_funcao_variavel_retorna_4(self):
+        self.assertEqual(funcaoVaria(x), 4)
+
+    '''def teste_funcao_variavel_retorna_3(self):
+        self.assertEqual(funcaoVaria(x), 3)'''
+
